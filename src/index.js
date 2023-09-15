@@ -12,11 +12,11 @@ class MyGame extends Phaser.Scene
     {
         this.load.image('logo', logoImg);
     }
-      
+
     create ()
     {
         const logo = this.add.image(400, 150, 'logo');
-      
+
         this.tweens.add({
             targets: logo,
             y: 450,
@@ -29,10 +29,10 @@ class MyGame extends Phaser.Scene
 }
 
 const config = {
-    type: Phaser.AUTO,
-    parent: 'phaser-example',
-    width: 800,
-    height: 600,
+    type: Phaser.WEBGL,
+    parent: 'phaser',
+    width: 1280,
+    height: 800,
     scene: MyGame
 };
 
