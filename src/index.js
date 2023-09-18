@@ -3,13 +3,11 @@ import logoImg from './assets/logo.png';
 
 class MyGame extends Phaser.Scene
 {
-    constructor ()
-    {
+    constructor () {
         super();
     }
 
-    preload ()
-    {
+    preload () {
         this.load.image('logo', logoImg);
     }
 
